@@ -1,0 +1,12 @@
+package com.lynda.olivegreen;
+
+import com.lynda.olivegreen_olives.Olives;
+
+public class Main {
+
+	public static void main(String[] args) {
+		 Olives olive= new Olives();
+		 olive.crush();
+	}
+
+}

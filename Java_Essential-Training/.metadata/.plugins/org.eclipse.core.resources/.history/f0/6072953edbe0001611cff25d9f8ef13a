@@ -1,0 +1,62 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String Value1=getInput("Enter the first numeric value : ");
+        String Value2=getInput("Enter the second numeric value : ");
+    	double doubleValue1=Double.parseDouble(Value1);
+        double doubleValue2= Double.parseDouble(Value2);
+        String op=getInput("enter 1=add, 2=substract, 3=Multiply, 4=Divide");
+        int opInt=Integer.parseInt(op);
+       switch (opInt) {
+		case 1:
+			 add(doubleValue1, doubleValue2);
+			break;
+		case 2:
+			 sub(doubleValue1, doubleValue2);
+			break;
+		case 3:
+			 time(doubleValue1, doubleValue2);
+			break;
+		case 4:
+			 div(doubleValue1, doubleValue2);
+			break;
+		default:
+			System.out.println("you entred an incorrect value.");
+	}
+       
+
+	}
+	private static void add(double doubleValue1, double doubleValue2) {
+		System.out.println("the sum of "+ doubleValue1 + " and "+doubleValue2+ " is "+ doubleValue1+doubleValue2);
+	}
+	private static void sub(double doubleValue1, double doubleValue2) {
+			double result=doubleValue1-doubleValue2;
+			System.out.println("the sub of "+ doubleValue1 + " and "+doubleValue2+ " is "+result);
+		}
+	private static void time(double doubleValue1, double doubleValue2) {
+		double result=doubleValue1*doubleValue2;
+		System.out.println("the multiplication of "+ doubleValue1 + " and "+doubleValue2+ " is "+result);
+	}
+	private static void div(double doubleValue1, double doubleValue2) {
+		double result=doubleValue1/doubleValue2;
+		System.out.println("the division of "+ doubleValue1 + " and "+doubleValue2+ " is "+result);
+	}
+	
+	private static String getInput(String prompt) {
+        BufferedReader stdin= new BufferedReader(new InputStreamReader(System.in));
+        System.out.print(prompt);
+        System.out.flush();
+        try{
+     	   return stdin.readLine();
+        }catch(Exception e){
+     	   return "Error: " +e.getMessage();
+        }
+		
+	}
+
+}

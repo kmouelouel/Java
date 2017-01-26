@@ -1,0 +1,18 @@
+package com.lynda.javatraining;
+
+public class SimpleApplication {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Welcomer welcomer= new Welcomer();
+        welcomer.sayHello();
+	}
+
+}
+
+public class Welcomer {
+	private String welcome= "Hello from Nassim";
+	public void sayHello(){
+		System.out.println(welcome);
+	}
+}

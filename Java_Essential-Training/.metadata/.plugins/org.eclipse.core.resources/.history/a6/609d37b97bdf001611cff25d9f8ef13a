@@ -1,0 +1,16 @@
+import java.io.*;
+public class Calculator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        String ValueIn=getInput("Enter a Value: ");
+        System.out.println(ValueIn);
+	}
+
+	private static String getInput(String prompt) {
+           BufferedReader stdin= new BufferedReader();
+
+		return null;
+	}
+
+}

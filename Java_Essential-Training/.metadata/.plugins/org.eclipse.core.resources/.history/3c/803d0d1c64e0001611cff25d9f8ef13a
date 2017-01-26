@@ -1,0 +1,14 @@
+
+public class MethodOverLoading {
+
+	public static void main(String[] args){
+		int value1=5, value2=12, result=0;
+		result=addValues(value1, value2);
+		System.out.println("the result is :"+ result);
+				
+		
+	}
+	private static int addValues(int num1, int num2){
+		return num1+num2;
+	}
+}

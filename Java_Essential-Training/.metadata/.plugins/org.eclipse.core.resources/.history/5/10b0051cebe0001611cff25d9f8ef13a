@@ -1,0 +1,37 @@
+package com.lynda.calc;
+import Helpers.InputHelper;
+import Helpers.MathHelper;
+
+public class Calculator {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String Value1=InputHelper.getInput("Enter the first numeric value : ");
+        String Value2=InputHelper.getInput("Enter the second numeric value : ");
+    	double doubleValue1=Double.parseDouble(Value1);
+        double doubleValue2= Double.parseDouble(Value2);
+        String op=InputHelper.getInput("enter 1=add, 2=substract, 3=Multiply, 4=Divide");
+        int opInt=Integer.parseInt(op);
+       switch (opInt) {
+		case 1:
+			MathHelper.add(doubleValue1, doubleValue2);
+			break;
+		case 2:
+			MathHelper.sub(doubleValue1, doubleValue2);
+			break;
+		case 3:
+			MathHelper.time(doubleValue1, doubleValue2);
+			break;
+		case 4:
+			MathHelper.div(doubleValue1, doubleValue2);
+			break;
+		default:
+			System.out.println("you entred an incorrect value.");
+	}
+       
+
+	}
+	
+
+
+}

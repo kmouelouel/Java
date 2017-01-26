@@ -1,0 +1,10 @@
+the instructions:
+1-cd FileName
+2 dir ( bin/ src/ .claapathh/ .project)
+3- cd src
+4- javac FileName.java => create FileName.class
+5- java FileName
+6- javac FileName.java -d ..\bin (put the exucutable in the bin directory)
+7-cd ..\bin 
+8- java FileName
+9-javac FileName.java -verbose ( to list all steps).
